@@ -18,7 +18,6 @@ class NegociacaoController {
 		this._negociacoes.adiciona(this._criaNegociacoes());
 		this._limpaFormulario();
 		this._negociacoesView.update(this._negociacoes);
-		//console.log(this._negociacoes.paraArray());
 	}
 
 	_criaNegociacoes() {
