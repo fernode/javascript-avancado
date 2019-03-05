@@ -8,6 +8,10 @@ class DateConverter {
 	}
 
 	static paraData(texto) {
+		if (!/^\d{4}-\d{2}-\d{2}$/.test(texto)) {
+			throw new Error('O formato da data deve ser aaaa-mm-dd');
+		}
+
 		return new Date(
 			...texto
 			.split('-')
